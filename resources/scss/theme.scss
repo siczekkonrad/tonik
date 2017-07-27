@@ -1,0 +1,106 @@
+/*** variables ***/
+
+$black : #191919;
+$blue: #4A90E2;
+$white: #FFF;
+
+
+
+/*** global ***/
+html {
+	font-size: 10px !important;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body * {
+	box-sizing: border-box;
+}
+
+ul {
+	list-style-type: none;
+	margin:0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	width: 90%;
+	max-width: 1200px;
+	display: flex;
+	margin: 0 auto;
+}
+
+.entry-content {
+	width: 100%;
+	max-width: 769px;
+	margin: 0 auto;
+}
+
+
+
+/** header **/
+
+.header {
+
+	&-main {
+		width: 100%;
+		padding: 4rem 0;
+		
+
+		&__content {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+		}
+		&--left {
+			display: flex;
+			align-items: center;
+		}
+
+		&--right {
+			display: flex;
+			width: 80%;
+			justify-content: flex-end;
+			align-items: center;
+		}
+	}
+}
+
+
+/** main  nav ***/
+
+
+.nav-main {
+	
+}
+
+.menu-main {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-direction : row;
+
+
+
+	li {
+		a {
+			display: block;
+			color: $black;
+			font-size: 1.6rem;
+			padding: 1.9rem 4.2rem;
+			border-radius: 2px;
+
+			&:hover {
+				color: $white;
+				background-color: $blue;
+			}
+		}
+	}
+}

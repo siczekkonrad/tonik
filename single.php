@@ -6,3 +6,29 @@
  *
  * @package Recruitment_WP
  */
+
+get_header();?>
+
+
+<section id="content">
+	<div class="container">
+		
+		<div class="entry-content">
+			<h1><?php the_title();?></h1>
+			
+		</div>
+
+	</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<?php get_footer();?>
