@@ -26,7 +26,7 @@ a {
 
 .entry-content {
   width: 100%;
-  max-width: 769px;
+  max-width: 570px;
   margin: 0 auto; }
 
 /** header **/
@@ -61,3 +61,22 @@ a {
     .menu-main li a:hover {
       color: #FFF;
       background-color: #4A90E2; }
+
+/** entry content ***/
+.entry-content img.aligncenter.size-full, .entry-content pre {
+  width: 140%;
+  max-width: 769px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%); }
+
+.entry-content blockquote, .entry-content blockquote span, .entry-content blockquote p {
+  margin: 0;
+  display: inline-block;
+  width: 140%;
+  max-width: 769px;
+  white-space: initial;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%); }
