@@ -446,3 +446,70 @@ a {
 
 	
 }
+
+
+
+/** social **/
+
+.social-icon {
+	width: 3rem;
+	height: 3rem;
+	border-radius: 100%;
+	background-color: $blue;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
+	border: 1px solid $blue;
+	transition: all 0.2s linear;
+
+	&:hover {
+		background-color: $white;
+		svg {
+			path, circle {
+				fill: $blue;
+			}
+			
+		}
+	}
+
+	&.facebook {
+
+		svg {
+			width: 16px;
+			height: 16px;
+			fill: #fff;
+		}
+			
+	}
+
+	&.twitter {
+		
+	}
+
+	&.linkedin {
+		
+
+	}
+}
+
+
+.share-heading {
+	font-size: 1rem;
+	color: $middle-grey;
+	letter-spacing: 0.127em;
+	text-transform: uppercase;
+}
+
+.social-share {
+	width: 50px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	position: fixed;
+	top: 40%;
+	right: 10%;
+}

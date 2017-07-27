@@ -290,7 +290,7 @@ add_shortcode( 'display_banner', 'display_banner_post_type' );
     function theme_settings_page(){
 	    ?>
 		    <div class="wrap">
-		    <h1>Theme Panel</h1>
+		    <h1>Social Media</h1>
 		    <form method="post" action="options.php">
 		        <?php
 		            settings_fields("section");
@@ -302,7 +302,7 @@ add_shortcode( 'display_banner', 'display_banner_post_type' );
 		<?php
 	}
 function add_theme_menu_item(){
-	add_menu_page("Theme Panel", "Theme Panel", "manage_options", "theme-panel", "theme_settings_page", null, 99);
+	add_menu_page("Social Media", "Social Media", "manage_options", "theme-panel", "theme_settings_page", null, 99);
 }
 
 add_action("admin_menu", "add_theme_menu_item");
@@ -315,13 +315,13 @@ add_action("admin_menu", "add_theme_menu_item");
 
 	function display_facebook_element(){
 	?>
-		<input type="checkbox" name="facebook" value="1" <?php checked(1, get_option('facebook'), true); ?> /> 
+		<input type="checkbox" name="facebook" value="1" <?php checked(2, get_option('facebook'), true); ?> /> 
 	<?php
 	}
 
 	function display_linkedin_element(){
 	?>
-		<input type="checkbox" name="linkedin" value="1" <?php checked(1, get_option('linkedin'), true); ?> /> 
+		<input type="checkbox" name="linkedin" value="1" <?php checked(3, get_option('linkedin'), true); ?> /> 
 	<?php
 	}
    

@@ -70,9 +70,12 @@ get_header();?>
 					 </span>
 					 
 						<span class="author__description"><?php the_author_meta('description');?></span>
+
+						
 				</div>
 					
 			</div>
+			<?php get_sidebar();?>
 		</div>
 	</div>
 </section>
