@@ -24,7 +24,7 @@ a {
   display: flex;
   margin: 0 auto; }
 
-.entry-content {
+.entry-content, .container-entry {
   width: 100%;
   max-width: 570px;
   margin: 0 auto; }
@@ -62,7 +62,32 @@ a {
       color: #FFF;
       background-color: #4A90E2; }
 
+/** footer **/
+.footer-column {
+  width: 33%;
+  flex-basis: 33%; }
+  .footer-column__wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap; }
+
 /** entry content ***/
+.entry__featured {
+  width: 100%;
+  max-width: 769px;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: 50% 50%;
+  padding-top: 55%;
+  margin: 0 auto; }
+
+.entry-column {
+  display: flex;
+  width: 769px;
+  flex-direction: column;
+  margin: 0 auto; }
+
 .entry-content img.aligncenter.size-full, .entry-content pre {
   width: 140%;
   max-width: 769px;

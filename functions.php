@@ -62,3 +62,33 @@ function tonik_theme_styles(){
 }
 
 add_action('wp_enqueue_scripts', 'tonik_theme_styles');
+
+
+
+if(function_exists('register_sidebar') ){
+            register_sidebar( array(
+                'name'          => 'Footer - Column 1',
+                'id'            => 'footer_column1',
+                'before_widget' => '<div class="footer-column">',
+                'after_widget'  => '</div>',
+                'before_title'  => '<h4 class="footer-title">',
+                'after_title'   => '</h4>'
+            ));
+            register_sidebar( array(
+                'name'          => 'Footer - Column 2',
+                'id'            => 'footer_column2',
+                'before_widget' => '<div class="footer-column">',
+                'after_widget'  => '</div>',
+                'before_title'  => '<h4 class="footer-title">',
+                'after_title'   => '</h4>'
+            ));
+            register_sidebar( array(
+                'name'          => 'Footer - Column 3',
+                'id'            => 'footer_column3',
+                'before_widget' => '<div class="footer-column">',
+                'after_widget'  => '</div>',
+                'before_title'  => '<h4 class="footer-title">',
+                'after_title'   => '</h4>'
+            ));
+
+        }
