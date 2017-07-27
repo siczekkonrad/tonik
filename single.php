@@ -14,7 +14,7 @@ get_header();?>
 	<div class="container">
 		<div class="entry-column">
 			<div class="entry-content">
-				<h1><?php the_title();?></h1>
+				<h1 class="entry__title"><?php the_title();?></h1>
 
 					<?php if(has_excerpt( $post->ID )):?>
 						<!-- if has excerpt -->
@@ -39,7 +39,7 @@ get_header();?>
 			
 
 			<div class="entry-content">
-			
+
 				<?php the_content();?>
 
 				
@@ -69,7 +69,7 @@ get_header();?>
 						?>
 					 </span>
 					 
-						<span class="auhtor__description"><?php the_author_meta('description');?></span>
+						<span class="author__description"><?php the_author_meta('description');?></span>
 				</div>
 					
 			</div>
